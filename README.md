@@ -26,12 +26,5 @@ Ensure that the **Code Runner** extension is installed for this extension to wor
 1. Open your workspace in VS Code.
 2. Press `Ctrl + Shift + P` to open the Command Palette.
 3. Run `AutoPilot: Run Code and Send to Copilot` to execute your code and send the result to Copilot Chat.
+4. You can customize the command with your own shortcut keys.
 
----
-
-### Development
-
-To develop the extension further:
-
-- Press `F5` to open a new VS Code window with the extension loaded.
-- Use the Command Palette to test your commands.

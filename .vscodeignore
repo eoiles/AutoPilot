@@ -9,3 +9,9 @@ vsc-extension-quickstart.md
 **/*.map
 **/*.ts
 **/.vscode-test.*
+.vscode/
+.git/
+node_modules/
+out/           # If you're compiling your TS files into an out folder
+src/test/
+.vscode/

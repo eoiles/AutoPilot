@@ -1,17 +1,19 @@
 {
-  "name": "your-extension-name",
-  "displayName": "Your Extension",
-  "description": "Description of your extension",
-  "version": "0.0.1",
-  "publisher": "your-publisher-name",
+  "name": "autocopilot",
+  "displayName": "AutoPilot",
+  "description": "Automatically running code and sending outputs to Copilot Chat.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eoiles/AutoPilot.git"
+  },
+  "license": "MIT",
+  "version": "1.0.1",
+  "publisher": "eoiles",
   "engines": {
-    "vscode": "^1.50.0"
+    "vscode": "^1.60.0"
   },
   "activationEvents": [
-    "onCommand:autopilot.autoPilot",
-    "onCommand:autopilot.focusCopilotChat",
-    "onCommand:autopilot.copyTerminalLastCommandOutput",
-    "onCommand:autopilot.sendLastTerminalCommandOutputToChat"
+
   ],
   "main": "./out/extension",
   "contributes": {
