@@ -1,5 +1,15 @@
+# Output directories
 out
 dist
+
+# Dependencies
 node_modules
+
+# VSCode test directories
 .vscode-test/
+
+# Package files
 *.vsix
+
+# Ignore VS Code workspace settings and extension test files
+.vscode/

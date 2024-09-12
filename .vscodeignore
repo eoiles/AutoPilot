@@ -1,6 +1,11 @@
+# Exclude development-specific files
 .vscode/**
 .vscode-test/**
+
+# Ignore source files
 src/**
+
+# Ignore config and test files
 .gitignore
 .yarnrc
 vsc-extension-quickstart.md
@@ -8,10 +13,10 @@ vsc-extension-quickstart.md
 **/eslint.config.mjs
 **/*.map
 **/*.ts
-**/.vscode-test.*
-.vscode/
-.git/
+
+# Ignore output folders and files
+out/
+!out/extension.js
 node_modules/
-out/           # If you're compiling your TS files into an out folder
-src/test/
-.vscode/
+.git/
+!images/AutoPilot.png

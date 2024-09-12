@@ -7,11 +7,12 @@
     "url": "https://github.com/eoiles/AutoPilot.git"
   },
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "eoiles",
   "engines": {
     "vscode": "^1.60.0"
   },
+  "icon": "images/AutoPilot.png",  
   "activationEvents": [
 
   ],
