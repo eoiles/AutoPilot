@@ -34,8 +34,21 @@ export function activate(context: vscode.ExtensionContext) {
         await vscode.commands.executeCommand('workbench.action.terminal.copyLastCommandOutput');
     });
 
+    const sendLastTerminalOutputToChat = vscode.commands.registerCommand('autopilot.sendLastTerminalCommandOutputToChat', async () => {
+        // Focus on the Copilot chat window
+        await vscode.commands.executeCommand('workbench.panel.chat.view.copilot.focus');
+
+        // Insert "@workspace " text to the chat input
+        await vscode.env.clipboard.writeText('@workspace ');
+        await vscode.commands.executeCommand('editor.action.clipboardPasteAction');
+
+        // Copy and paste the last terminal command output
+        await vscode.commands.executeCommand('workbench.action.terminal.copyLastCommandOutput');
+        await vscode.commands.executeCommand('editor.action.clipboardPasteAction');
+    });
+
     // Push the registered commands to the context subscriptions to enable disposal later
-    context.subscriptions.push(autoPilot, focusCopilotChat, copyTerminalOutput);
+    context.subscriptions.push(autoPilot, focusCopilotChat, copyTerminalOutput, sendLastTerminalOutputToChat);
 }
 
 // This method is called when the extension is deactivated

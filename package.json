@@ -7,7 +7,7 @@
     "url": "https://github.com/eoiles/AutoPilot.git"
   },
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "eoiles",
   "engines": {
     "vscode": "^1.60.0"
