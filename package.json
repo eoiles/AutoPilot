@@ -1,0 +1,46 @@
+{
+  "name": "your-extension-name",
+  "displayName": "Your Extension",
+  "description": "Description of your extension",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "activationEvents": [
+    "onCommand:autopilot.autoPilot",
+    "onCommand:autopilot.focusCopilotChat",
+    "onCommand:autopilot.copyTerminalLastCommandOutput",
+    "onCommand:autopilot.sendLastTerminalCommandOutputToChat"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "autopilot.autoPilot",
+        "title": "AutoPilot: Run Code and Send to Copilot"
+      },
+      {
+        "command": "autopilot.focusCopilotChat",
+        "title": "AutoPilot: Focus Copilot Chat"
+      },
+      {
+        "command": "autopilot.copyTerminalLastCommandOutput",
+        "title": "AutoPilot: Copy Last Terminal Command Output"
+      },
+      {
+        "command": "autopilot.sendLastTerminalCommandOutputToChat",
+        "title": "AutoPilot: Send Last Terminal Output to Copilot"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -w -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.5",
+    "@types/vscode": "^1.50.0"
+  }
+}
